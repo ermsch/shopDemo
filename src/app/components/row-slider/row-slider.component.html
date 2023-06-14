@@ -1,0 +1,31 @@
+<div *ngIf="showThisCategory" class="categorized">
+  <h3>{{showThisCategory}}</h3>
+  <p>{{hello}}</p>
+  <owl-carousel-o [options]="customOptions">
+    <ng-container *ngFor="let product of categorizedProducts">
+      <ng-template carouselSlide>
+        <div class="product">
+          <h3>{{product.name}}</h3>
+          <img src="{{product.image}}">
+          <p>{{product.price}}$</p>
+        </div>
+      </ng-template>
+    </ng-container>
+  </owl-carousel-o>
+</div>
+<div *ngIf="!showThisCategory" class="allProducts">
+  <owl-carousel-o [options]="customOptions">
+    <ng-container *ngFor="let product of productList">
+      <ng-template carouselSlide>
+        <div class="product">
+          <h3>{{product.name}}</h3>
+          <img src="{{product.image}}">
+          <p>{{product.price}}$</p>
+        </div>
+      </ng-template>
+    </ng-container>
+  </owl-carousel-o>
+</div>
+
+
+
