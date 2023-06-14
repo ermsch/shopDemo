@@ -1,0 +1,15 @@
+.search {
+  position: relative;
+  input {
+    border-radius: 20px;
+    border: 1px solid grey;
+    width: 100%;
+  }
+  button {
+    background: none;
+    border: none;
+    position: absolute;
+    right: 0;
+
+  }
+}

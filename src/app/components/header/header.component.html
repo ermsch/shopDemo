@@ -1,5 +1,5 @@
 <header>
-  <div class="logo">
+  <div class="logo" [routerLink]="['/']" >
     <h3>logo placeholder</h3>
     <img src="" alt="">
   </div>
@@ -7,9 +7,7 @@
     <app-search></app-search>
   </div>
   <nav>
-    <a [routerLink]="['/']">item</a>
-    <a [routerLink]="['/']">item</a>
-    <a [routerLink]="['/']">item</a>
-    <a [routerLink]="['/']">item</a>
+    <i [routerLink]="['/cart']" class="bi bi-cart-fill"></i>
+    <i [routerLink]="['/login']" class="bi bi-person-circle"></i>
   </nav>
 </header>

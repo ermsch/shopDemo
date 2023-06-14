@@ -12,4 +12,6 @@ export class ProductListComponent {
   productList: Product[] = products
 
   protected readonly products = products;
+
+
 }

@@ -1,1 +1,21 @@
-<p>hero works!</p>
+<ngb-carousel [interval]="5000">
+  <ng-template ngbSlide>
+    <div>
+      <img src="assets/images/product_hero.png" alt="">
+      <div class="information">
+        <h3>hello</h3>
+        <button >button</button>
+      </div>
+    </div>
+  </ng-template>
+  <ng-template ngbSlide>
+    <div>
+      <img src="assets/images/product_hero_2.png" alt="">
+    </div>
+  </ng-template>
+  <ng-template ngbSlide>
+    <div>
+      <img src="assets/images/product_hero_3.png" alt="">
+    </div>
+  </ng-template>
+</ngb-carousel>

@@ -4,20 +4,30 @@ header {
   align-items: center;
   flex-direction: row;
   padding: 20px;
-  border: 1px solid black;
+  background: white;
   .logo {
     display: flex;
     //justify-content: center;
     //align-items: center;
+    width: 33%;
+    cursor: pointer;
 
   }
   .search {
+    width: 33%;
 
   }
   nav {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-end;
+    gap: 25px;
     align-items: center;
     flex-direction: row;
+    width: 33%;
+    i {
+      font-size: 25px;
+      cursor: pointer;
+
+    }
   }
 }

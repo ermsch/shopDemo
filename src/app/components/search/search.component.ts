@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import {Component} from '@angular/core';
+import {Product} from "../../models/Product";
 
 @Component({
   selector: 'app-search',
@@ -6,5 +7,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./search.component.scss']
 })
 export class SearchComponent {
+
+  searchedProduct = ''
+
+  searchProduct(){
+    console.log('searched product is: ', this.searchedProduct)
+    this.searchedProduct = ''
+  }
 
 }
