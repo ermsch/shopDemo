@@ -7,6 +7,10 @@ import { LandingPageComponent } from './components/landing-page/landing-page.com
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { LoginComponent } from './components/login/login.component';
+import { SearchComponent } from './components/search/search.component';
+import { HeroComponent } from './components/hero/hero.component';
+import { ProductComponent } from './components/product/product.component';
+import { ProductListComponent } from './components/product-list/product-list.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +18,11 @@ import { LoginComponent } from './components/login/login.component';
     LandingPageComponent,
     HeaderComponent,
     FooterComponent,
-    LoginComponent
+    LoginComponent,
+    SearchComponent,
+    HeroComponent,
+    ProductComponent,
+    ProductListComponent
   ],
   imports: [
     BrowserModule,
