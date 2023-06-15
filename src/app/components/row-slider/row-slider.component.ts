@@ -16,7 +16,7 @@ export class RowSliderComponent {
     loop: true,
     mouseDrag: true,
     touchDrag: true,
-    pullDrag: true,
+    pullDrag: false,
     dots: false,
     navSpeed: 700,
     navText: ['', ''],

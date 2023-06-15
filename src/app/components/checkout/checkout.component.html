@@ -1,0 +1,15 @@
+<div class="checkout">
+  <div class="loginRegister" *ngIf="!isLogged">
+    you have to login or register before checking out
+  </div>
+  <div class="isLogged" *ngIf="isLogged" >
+    you are logged, cool
+    <h3>payment information comes here</h3>
+    you are buying: {{checkoutCart.user.userName}}
+    <h3>Items:</h3>
+    <ul>
+      <li *ngFor="let item of checkoutCart.items">{{ item.name }} - {{ item.price }}</li>
+    </ul>
+  </div>
+
+</div>

@@ -17,17 +17,26 @@ import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { RowSliderComponent } from './components/row-slider/row-slider.component';
-import { NZ_I18N } from 'ng-zorro-antd/i18n';
-import { en_US } from 'ng-zorro-antd/i18n';
-import { registerLocaleData } from '@angular/common';
-import en from '@angular/common/locales/en';
 import { HttpClientModule } from '@angular/common/http';
 import { NzFormModule } from 'ng-zorro-antd/form';
 import { NzInputModule } from 'ng-zorro-antd/input';
 import { NzButtonModule } from 'ng-zorro-antd/button';
 import { RegisterComponent } from './components/register/register.component';
+import { NzIconModule } from 'ng-zorro-antd/icon';
+import { NzCheckboxModule } from 'ng-zorro-antd/checkbox';
+import { ProductPageComponent } from './components/product-page/product-page.component';
+import { CartService } from "./services/cart.service";
+import { NgxSkeletonLoaderModule } from 'ngx-skeleton-loader';
+import { CheckoutComponent } from './components/checkout/checkout.component';
 
-registerLocaleData(en);
+const NzModules = [
+  NzFormModule,
+  NzInputModule,
+  NzButtonModule,
+  NzIconModule,
+  NzCheckboxModule,
+]
+
 
 @NgModule({
   declarations: [
@@ -42,7 +51,9 @@ registerLocaleData(en);
     ProductListComponent,
     CartComponent,
     RowSliderComponent,
-    RegisterComponent
+    RegisterComponent,
+    ProductPageComponent,
+    CheckoutComponent
   ],
   imports: [
     BrowserModule,
@@ -52,15 +63,12 @@ registerLocaleData(en);
     FormsModule,
     CarouselModule,
     HttpClientModule,
-    NzFormModule,
-    NzInputModule,
-    NzButtonModule,
+    NzModules,
     ReactiveFormsModule,
+    NgxSkeletonLoaderModule
 
   ],
-  providers: [
-    { provide: NZ_I18N, useValue: en_US }
-  ],
+  providers: [CartService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

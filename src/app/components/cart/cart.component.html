@@ -1,1 +1,40 @@
-<p>cart works!</p>
+<div class="cartWrapper">
+  <h3>Your cart <span *ngIf="!cartItems.length">is empty</span></h3>
+  <hr>
+  <div *ngFor="let product of cartItems; let i = index">
+    <div class="cart" *ngIf="!isDuplicate(product, i)">
+      <div class="cartItem">
+        <div class="image">
+          <img src="{{product.image}}">
+        </div>
+        <div class="information">
+          <h4>{{product.name}}</h4>
+          <h4><b>{{product.price}}</b></h4>
+          <p>{{product.availability}}</p>
+          <p>Amount: {{counts[product.id]}}</p>
+          <button (click)="deleteItem(product.id)"><i class="bi bi-trash-fill"></i></button>
+        </div>
+      </div>
+      <hr>
+    </div>
+
+
+  </div>
+
+
+  <div *ngIf="cartItems.length" class="endPrice">
+    <hr>
+    <div class="checkout">
+      <p>Sum ({{cartItems.length}} items): {{endPrice.toFixed(2)}}$</p>
+      <button [nzType]="'primary'" nz-button (click)="collectCart()"  [routerLink]="['/checkout']">Checkout</button>
+    </div>
+
+  </div>
+
+</div>
+<div class="offer" *ngIf="!cartItems.length">
+  <h3>recommended for you</h3>
+  <app-row-slider></app-row-slider>
+
+</div>
+

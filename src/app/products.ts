@@ -11,7 +11,8 @@ export const products: Product[] = [
     category: Category.DECOR,
     rating: 3,
     availability: Availability.AVAILABLE,
-    image: '../../../assets/images/product_hero_2.png'  },
+    image: '../../../assets/images/product_hero_2.png'
+  },
   {
     id: 2,
     name: 'Product2',
@@ -44,7 +45,7 @@ export const products: Product[] = [
   },
   {
     id: 5,
-    name: 'Product3',
+    name: 'Product5',
     description: 'a very a nice product description',
     price: 99.99,
     category: Category.ELECTRONICS,
@@ -54,7 +55,7 @@ export const products: Product[] = [
   },
   {
     id: 6,
-    name: 'Product3',
+    name: 'Product6',
     description: 'a very a nice product description',
     price: 2099.99,
     category: Category.ELECTRONICS,
@@ -64,12 +65,42 @@ export const products: Product[] = [
   },
   {
     id: 7,
-    name: 'Product3',
+    name: 'Product7',
     description: 'a very a nice product description',
     price: 299.99,
     category: Category.ELECTRONICS,
     rating: 3,
     availability: Availability.AVAILABLE,
     image: '../../../assets/images/product_hero_7.png'
+  },
+  {
+    id: 8,
+    name: 'Product8',
+    description: 'a very a nice product description',
+    price: 299.99,
+    category: Category.ELECTRONICS,
+    rating: 3,
+    availability: Availability.AVAILABLE,
+    image: '../../../assets/images/product_hero_8.png'
+  },
+  {
+    id: 9,
+    name: 'Product9',
+    description: 'a very a nice product description',
+    price: 299.99,
+    category: Category.ELECTRONICS,
+    rating: 3,
+    availability: Availability.AVAILABLE,
+    image: '../../../assets/images/product_hero_9.png'
+  },
+  {
+    id: 10,
+    name: 'Product10',
+    description: 'a very a nice product description',
+    price: 299.99,
+    category: Category.ELECTRONICS,
+    rating: 3,
+    availability: Availability.AVAILABLE,
+    image: '../../../assets/images/product_hero_10.png'
   },
 ]

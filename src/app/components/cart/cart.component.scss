@@ -1,0 +1,44 @@
+.cartWrapper {
+  padding: 20px;
+  .cart {
+
+    .cartItem {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-direction: row;
+      .image {
+        width: 50%;
+        img {
+          width: 100%;
+        }
+      }
+      .information {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        flex-direction: column;
+        padding: 10px 20px;
+        button {
+          background: none;
+          border: none;
+          color: red;
+        }
+      }
+
+
+    }
+  }
+
+  .endPrice {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end ;
+
+    .checkout {
+      button {
+        float: right
+      }
+    }
+  }
+}

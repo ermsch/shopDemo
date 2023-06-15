@@ -9,3 +9,19 @@
 body {
   background: #e8e8e8;
 }
+
+.cta {
+  border: none;
+  background: #1c1c1b;
+  color: white;
+  padding: 10px 20px;
+
+}
+
+[nz-button] {
+  background: black;
+  border: black;
+  &:hover {
+    background: #1c1c1b;
+  }
+}

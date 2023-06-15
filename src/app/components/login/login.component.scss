@@ -1,0 +1,26 @@
+.welcome {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  .bigLogo {
+    img {
+      height: 315px;
+    }
+  }
+  .welcomeText {
+    text-align: left;
+  }
+}
+.login {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  form {
+    button {
+      width: 100%;
+    }
+
+  }
+}

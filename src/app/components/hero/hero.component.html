@@ -1,21 +1,12 @@
 <ngb-carousel [interval]="5000">
-  <ng-template ngbSlide>
-    <div>
-      <img src="assets/images/product_hero.png" alt="">
+  <ng-template ngbSlide *ngFor="let product of productList">
+    <div class="relative" >
+      <img src="{{product.image}}" alt="">
       <div class="information">
-        <h3>hello</h3>
-        <button >button</button>
+        <h3>{{product.name}}</h3>
+        <p>{{product.description}}</p>
+        <button nz-button nzType="primary">discover now</button>
       </div>
-    </div>
-  </ng-template>
-  <ng-template ngbSlide>
-    <div>
-      <img src="assets/images/product_hero_2.png" alt="">
-    </div>
-  </ng-template>
-  <ng-template ngbSlide>
-    <div>
-      <img src="assets/images/product_hero_3.png" alt="">
     </div>
   </ng-template>
 </ngb-carousel>

@@ -1,0 +1,19 @@
+.productPage {
+  display: flex;
+
+  .image {
+    width: 50%;
+    img {
+      width: 100%;
+    }
+
+  }
+  .information {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    padding: 10px 20px;
+
+
+  }
+}

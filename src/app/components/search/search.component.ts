@@ -11,7 +11,7 @@ export class SearchComponent {
   searchedProduct = ''
 
   searchProduct(){
-    console.log('searched product is: ', this.searchedProduct)
+
     this.searchedProduct = ''
   }
 

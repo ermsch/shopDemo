@@ -7,7 +7,15 @@
     <app-search></app-search>
   </div>
   <nav>
-    <i [routerLink]="['/cart']" class="bi bi-cart-fill"></i>
-    <i [routerLink]="['/login']" class="bi bi-person-circle"></i>
+    <div class="cart">
+      <i [routerLink]="['/cart']" class="bi bi-cart-fill"></i>
+      <div class="counter" [routerLink]="['/cart']">
+        {{cartItemsCounter}}
+      </div>
+    </div>
+    <div class="login">
+      <i [routerLink]="['/login']" class="bi bi-person-circle"></i>
+    </div>
+
   </nav>
 </header>
